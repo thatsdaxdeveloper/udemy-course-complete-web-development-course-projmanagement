@@ -1,0 +1,27 @@
+{
+  "name": "projmanagement",
+  "version": "1.0.0",
+  "description": "A project management application for beginners build with hitesh od Udemy",
+  "keywords": [
+    "Udemy",
+    "project management",
+    "course",
+    "backend",
+    "API"
+  ],
+  "license": "ISC",
+  "author": "Dartpy Dax",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon script.js",
+    "start": "node script.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "prettier": "3.9.10"
+  },
+  "overrides": {
+    "minimatch": "^11.0.1"
+  }
+}
