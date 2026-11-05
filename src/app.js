@@ -14,14 +14,16 @@ app.use(express.urlencoded({ extended: true, limit: "10kb" }));
 app.use(express.static("public"));
 
 // Cors configurations middleware
-app.use(cors({
-  origin: process.env.CORS_ORIGIN?.split(",") ?? "http://localhost:3000",
-  credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-}));
+app.use(
+  cors({
+    origin: process.env.CORS_ORIGIN?.split(",") ?? "http://localhost:3000",
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  }),
+);
 
-// Health check route
+// Routes
 app.use("/api/v1/healthcheck", healthCheckRouter);
 
 export default app;
