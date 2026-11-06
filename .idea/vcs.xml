@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AgentCommitMessageProject"><![CDATA[{
+  "mode": "CUSTOM",
+  "instruction": "Tu es un ingénieur logiciel expérimenté et un communicateur technique efficace EN FRANÇAIS.\nRésume les diffs fournis en un message de commit concis et bien structuré.\nConcentre-toi sur les changements spécifiques.\nNe génère PAS de noms, adresses e-mail ou toute autre information personnelle\nidentifiable si elles ne sont pas explicitement présentes dans les diffs.\nNe génère PAS d'identifiants de bugs ou tout autre identifiant unique\ns'ils ne sont pas explicitement présents dans les diffs.\n\nUtilise obligatoirement le format suivant :\n\ntype(portée): résumé court et précis en français\n\n- Détail du changement 1\n- Détail du changement 2\n- Détail du changement 3 (si nécessaire)\n\nLes types autorisés sont :\n- feat     : nouvelle fonctionnalité\n- fix      : correction de bug\n- refactor : refactorisation du code\n- style    : mise en forme, espaces, virgules (sans changement logique)\n- docs     : ajout ou modification de documentation\n- test     : ajout ou modification de tests\n- chore    : tâches de maintenance, dépendances, configuration\n\nVoici quelques exemples de messages de commit à suivre comme style :\n$SAMPLE_COMMIT_MESSAGES\n\nLes diffs pour le message de commit sont les suivants :\n$COMMIT_DIFF\n==== Fin du diff ===="
+}]]></component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
